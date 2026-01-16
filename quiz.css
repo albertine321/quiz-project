@@ -1,0 +1,152 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-image: url(nybak.jpg);
+    background-size: cover;        /* Gjør at bildet dekker hele skjermen */
+    background-position: center;   /* Sentrerer bildet */
+    background-repeat: no-repeat;  /* Fjerner gjentakelse */
+    height: auto; /* Fyller hele høyden på skjermen */
+}
+
+#pilboks{
+    display: flex;
+    justify-content: flex-start; /* Plasserer pilen til venstre */
+    padding: 20px;
+}
+
+#venstrepil, #høyrepil{
+    height: 80px;
+    width: 75px;
+    border-radius: 50%;
+    border: #d0b101 2px solid;
+    background-color: #fff4c9;
+    color:  #fca3bc;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#venstrepil:hover, #høyrepil:hover{
+    height: 80px;
+    width: 75px;
+    border-radius: 50%;
+    border: #d0b101 2px solid;
+    background-color: #fca3bc;
+    color:#fff4c9;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+#uteboks{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+#venstreboks{
+    flex: 1;
+    display: flex;
+    justify-content:flex-end ;
+}
+
+#boks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    background-color: #fff4c9;
+    border-radius: 50%;
+    border: #d0b101 3px solid;
+}
+
+#høyreboks{
+    flex: 1;
+    display: flex;
+}
+
+#inneboks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tittel{
+    color: #fca3bc;
+    font-size: 32px;
+    text-align: center;
+    padding-inline: 100px;
+    margin-bottom: 20px;
+}
+
+#knapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alternativ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: #d0b101 2px solid;
+    background-color: #fff4c9;
+    color:  #fca3bc;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.alternativ:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: #d0b101 2px solid;
+    background-color: #fca3bc;
+    color:#fff4c9;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.alternativ.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: #d0b101 2px solid;
+    background-color: #fca3bc;
+    color:#fff4c9;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.alternativ.correct {
+    background-color: #65b064;
+    color: white;
+}
+
+.alternativ.wrong {
+    background-color: #f2423f;
+    color: white;
+}
