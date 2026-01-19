@@ -1,0 +1,1 @@
+Denne nettsiden er en quiz som gir deg tilfeldige spørsmål med fire svaralternativer. Trykker du på riktig svaralternativ så vises alternativet grønt, men hvis du trykker på feil svaralternativ vises den rød og riktig svar vises grønt. 
